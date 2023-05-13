@@ -455,23 +455,23 @@ image(backImage, 0, 0);
  fill(0);
  textSize (120);
  text(names[4], 960, 210);
- text(sums[4] + "$", 960, 330);
+ text(round2(sums[4]) + "$", 960, 330);
  
  textSize (120);
  text(names[3], 640, 530);
- text(sums[3] + "$", 640, 650);
+ text(round2(sums[3]) + "$", 640, 650);
  
  textSize (120);
  text(names[2], 1280, 530);
- text(sums[2] + "$", 1280, 650);
+ text(round2(sums[2]) + "$", 1280, 650);
  
   fill(255);
  textSize (80);
- text(names[1] + "   " + sums[1] + "$", 640, 865);
+ text(names[1] + "   " + round2(sums[1]) + "$", 640, 865);
  
 
  textSize (80);
- text(names[0] + "   " +sums[0] + "$", 1280, 865);
+ text(names[0] + "   " + round2(sums[0]) + "$", 1280, 865);
 
 }
 class Player {

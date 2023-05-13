@@ -624,6 +624,23 @@ float constant = 0.003 * (30 * (1 + mineIncrease) + 5 * logh * (3 + mineIncrease
 
     if (pipe||pipe2)
       image(pipeImage, xOffset + 50, 592);
+      
+      int siloH = 0;
+      
+      if (silo2) {
+      siloH = 176;
+      }
+      else if (silo) {
+      siloH = 125;
+      }
+      else {
+      siloH = 89;
+     
+      }
+      //LH 198 185  PD 290 274  92x89
+      fill(0);
+      int oilH = (int)map(mined, 0, siloCap, 0, siloH);
+      rect(xOffset + 50 + 198, 592 + 274 - oilH,92, oilH);
     image(siloImage, xOffset+ 50, 592);
   }
 
